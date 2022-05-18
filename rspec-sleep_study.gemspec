@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = "rspec-sleep_study"
-  s.version = "1.1.1"
+  s.version = "1.1.2"
   s.summary =
     "An RSpec profiler that shows you how long specs are spending in `sleep`"
   s.author = "Joey Schoblaska / Kenna Security"
