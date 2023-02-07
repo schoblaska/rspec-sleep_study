@@ -7,7 +7,7 @@ The `sleep` method can be a useful tool, especially in networking code (eg: back
 Sleep Study works by putting [tracers](https://ruby-doc.org/core-2.0.0/TracePoint.html) around every call and return of every C routine that your code calls, and saving benchmarking data if that routine is a `sleep` function. As you might expect, running Ruby code involves executing a _lot_ of C routines. Those tracers are not free, and having them in place can add an extra 20-25% to your specs' execution time. As such, it's a good idea to run Sleep Study either in a separate CI build, or only occasionally to audit your test suite.
 
 ## Usage
-After adding `rspec-sleep_study` to your Gemfile, run RSpec with the `--format RSpec::SleepStudy` option.
+After adding `rspec-sleep_study` to your Gemfile, run RSpec with the `--format RSpec::SleepStudy` option. (If you want the normal progress report as well, you can run RSpec with both formatters: `--format progress --format RSpec::SleepStudy`)
 
 ## Example
 ```
